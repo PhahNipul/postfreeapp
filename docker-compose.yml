@@ -1,0 +1,9 @@
+  version: '3'
+services:
+  stock-api-uat:
+    build: .
+    ports:
+      - "20011:20011"
+    restart: always
+    volumes:
+      - /opt/uat/projects/pos/upload/image:/opt/uat/projects/pos/upload/image
